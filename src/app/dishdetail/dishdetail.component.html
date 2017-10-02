@@ -28,15 +28,15 @@ fxLayoutGap.xs="0">
 
 <div fxFlex="40">
     <md-list fxFlex *ngIf="dish">
-      <h3>Comments</h3>      
-      <md-list-item *ngFor="let comment of dish.comments">
-            <h4 md-line>{{comment.comment}}</h4>
-            <p md-line>{{comment.rating}} Stars</p>
-            <p md-line>
-              <span>--{{comment.author}} {{comment.date | date }}</span>
-            </p>
-        </md-list-item>
-    </md-list>  
+        <h3>Comments</h3>      
+        <md-list-item *ngFor="let comment of dish.comments">
+              <h4 md-line>{{comment.comment}}</h4>
+              <p md-line>{{comment.rating}} Stars</p>
+              <p md-line>
+                <span>--{{comment.author}} {{comment.date | date }}</span>
+              </p>
+          </md-list-item>
+      </md-list>  
 </div>
 
 </div>
